@@ -22,7 +22,7 @@ spec:
             - containerPort: 80
           env:
             - name: ASPNETCORE_ENVIRONMENT
-              value: clientt
+              value: client
           resources:
             requests:
               memory: "64Mi"
