@@ -36,11 +36,9 @@ kind: Service
 metadata:
   name: authenticationapi-service
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
     app: authenticationapi
   ports:
-    - protocol: TCP
       port: 8000
       targetPort: 80
-      nodePort: 31000
